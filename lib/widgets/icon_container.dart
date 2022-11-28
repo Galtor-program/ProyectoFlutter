@@ -4,18 +4,19 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class IconContainer extends StatelessWidget {
-  const IconContainer({super.key});
+  final double size;
+  const IconContainer({Key? key, required this.size});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 110,
-      height: 110,
+      width: this.size,
+      height: this.size,
       child: Center(
         child: SvgPicture.asset(
           'assets/icon.svg',
-          width: 110,
-          height: 110,
+          width: this.size * 1.9,
+          height: this.size * 1.9,
         ),
       ),
     );
