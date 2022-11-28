@@ -29,8 +29,8 @@ class _HomePageState extends State<HomePage> {
                 child: Circle(
                   size: size.width * 0.8,
                   colors: [
-                    Colors.blue,
-                    Color.fromARGB(255, 77, 219, 255),
+                    Color.fromARGB(255, 33, 243, 177),
+                    Color.fromARGB(255, 31, 100, 97),
                   ],
                 )),
             Positioned(

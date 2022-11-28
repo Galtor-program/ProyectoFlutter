@@ -9,14 +9,13 @@ class IconContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 180,
-      height: 180,
-      padding: EdgeInsets.all(20),
+      width: 110,
+      height: 110,
       child: Center(
         child: SvgPicture.asset(
           'assets/icon.svg',
-          width: 80,
-          height: 80,
+          width: 110,
+          height: 110,
         ),
       ),
     );
