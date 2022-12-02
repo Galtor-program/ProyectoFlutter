@@ -12,11 +12,18 @@ class IconContainer extends StatelessWidget {
     return Container(
       width: this.size,
       height: this.size,
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 255, 255, 255),
+        borderRadius: BorderRadius.circular(17),
+        boxShadow: [
+          BoxShadow(color: Colors.black26, blurRadius: 10),
+        ],
+      ),
       child: Center(
         child: SvgPicture.asset(
           'assets/icon.svg',
-          width: this.size * 1.9,
-          height: this.size * 1.9,
+          width: this.size * 0.9,
+          height: this.size * 0.9,
         ),
       ),
     );
